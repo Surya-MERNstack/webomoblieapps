@@ -125,7 +125,7 @@ const Main = () => {
         </div>
       </div>
       {/* Great */}
-      <div className="flex justify-between mt-28 md:flex-wrap sm:flex-wrap">
+      <div className="flex justify-between mt-28 ">
         <div className="text-center   mx-auto w-1/3">
           <h1 className="text-4xl text-blue-800 font-bold mt-24">
             Great support starts by being available
@@ -146,7 +146,7 @@ const Main = () => {
       </div>
 
       {/* facebook */}
-      <div className="flex justify-between mt-28 md:flex-wrap-reverse sm:flex-wrap-reverse">
+      <div className="flex justify-between mt-28">
         <div className="w-full">
           <img src={facebook} alt="" />
         </div>
@@ -167,7 +167,7 @@ const Main = () => {
       </div>
 
       {/* ai */}
-      <div className="flex justify-between mt-28 md:flex-wrap sm:flex-wrap">
+      <div className="flex justify-between mt-28">
         <div className="text-center  mx-auto w-1/3">
           <h1 className="text-4xl text-blue-800 font-bold mt-24">
             Great support starts by being available
@@ -188,7 +188,7 @@ const Main = () => {
       </div>
 
       {/* all in one */}
-      <div className="flex justify-between mt-10 md:flex-wrap-reverse sm:flex-wrap-reverse">
+      <div className="flex justify-between mt-10 ">
         <div className="w-full">
           <img src={all} alt="" width="900px" />
         </div>
@@ -210,7 +210,7 @@ const Main = () => {
       </div>
 
       {/* e-com */}
-      <div className="flex justify-between mt-28 md:flex-wrap sm:flex-wrap">
+      <div className="flex justify-between mt-28">
         <div className="text-center mx-auto w-1/3 ">
           <h1 className="text-4xl text-blue-800 font-bold mt-24">
             End to end review management in one place{" "}
@@ -230,7 +230,7 @@ const Main = () => {
         </div>
       </div>
       {/* bg gird */}
-      <div className="w-full md:flex-wrap sm:flex-wrap ">
+      <div className="w-full ">
         <div className=" mt-24 w-full h-auto shadow-sm ">
           <h2 className="text-4xl text-blue-800 font-bold mt-52 text-center">
             Why choose Simplify360 for your business
@@ -301,7 +301,7 @@ const Main = () => {
       </div>
 
       {/* marketplace */}
-      <div className=" mt-16 w-11/12 md:flex-wrap sm:flex-wrap">
+      <div className=" mt-16 w-11/12 ">
         <div className="">
           <h1 className="text-4xl text-blue-800 font-bold mt-52 text-center">
             Integrate with your favorite tools on the go. Accomplish more by
