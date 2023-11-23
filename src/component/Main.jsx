@@ -21,12 +21,14 @@ import { FaChevronCircleLeft } from "react-icons/fa";
 import { IoShield } from "react-icons/io5";
 import { FaSackDollar } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
+import last_before from "../assets/last_before.png";
+import { FaAngleRight } from "react-icons/fa";
 
 const Main = () => {
   return (
     <div className="border border-green-700 overflow-hidden">
-      <div className=" flex justify-between w-full  md:flex-wrap sm:flex-wrap">
-        <div className="w-1/3 md:w-96 md:mx-24 mt-24 p-3 ">
+      <div className="flex  justify-between ">
+        <div className="w-1/3 md:w-1/3 md:mx-24 mt-24 p-3 ">
           <h1 className="font-bold text-3xl md:text-4xl">
             <span role="img" aria-label="wave" className="text-4xl md:text-5xl">
               👋
@@ -84,11 +86,11 @@ const Main = () => {
             </button>
           </div>
         </div>
-        <div className="w-11/12  md:w-full">
+        <div className="w-auto  md:w-fit">
           <img
             src={banner}
             alt=""
-            className="w-full h-full "
+            className="w-auto h-full  md:object-contain  sm:object-contain"
           />
         </div>
       </div>
@@ -113,7 +115,7 @@ const Main = () => {
         <h1 className="font-bold text-4xl text-center  w-1/3 mx-auto text-blue-800">
           Explore Simplify360's end-to-end support engagement & growth solution
         </h1>
-        <div className="flex justify-around mt-16 flex-wrap md:gap-3 sm:gap-5 md:justify-around">
+        <div className="flex justify-around md:mt-16 flex-wrap md:gap-3 sm:gap-5 md:justify-around">
           <img src={one} alt="" srcset="" />
           <img src={two} alt="" srcset="" />
           <img src={three} alt="" srcset="" />
@@ -123,8 +125,8 @@ const Main = () => {
         </div>
       </div>
       {/* Great */}
-      <div className="flex justify-between mt-28">
-        <div className="text-center border  mx-auto w-1/3">
+      <div className="flex justify-between mt-28 md:flex-wrap sm:flex-wrap">
+        <div className="text-center   mx-auto w-1/3">
           <h1 className="text-4xl text-blue-800 font-bold mt-24">
             Great support starts by being available
           </h1>
@@ -139,12 +141,12 @@ const Main = () => {
           </div>
         </div>
         <div className="w-full">
-          <img src={great} alt="" className="mx-72" />
+          <img src={great} alt="" />
         </div>
       </div>
 
       {/* facebook */}
-      <div className="flex justify-between mt-28">
+      <div className="flex justify-between mt-28 md:flex-wrap-reverse sm:flex-wrap-reverse">
         <div className="w-full">
           <img src={facebook} alt="" />
         </div>
@@ -165,7 +167,7 @@ const Main = () => {
       </div>
 
       {/* ai */}
-      <div className="flex justify-between mt-28">
+      <div className="flex justify-between mt-28 md:flex-wrap sm:flex-wrap">
         <div className="text-center  mx-auto w-1/3">
           <h1 className="text-4xl text-blue-800 font-bold mt-24">
             Great support starts by being available
@@ -181,12 +183,12 @@ const Main = () => {
           </div>
         </div>
         <div className="w-full">
-          <img src={ai} alt="" width="850px" className="mx-96" />
+          <img src={ai} alt="" width="850px" />
         </div>
       </div>
 
       {/* all in one */}
-      <div className="flex justify-between mt-10">
+      <div className="flex justify-between mt-10 md:flex-wrap-reverse sm:flex-wrap-reverse">
         <div className="w-full">
           <img src={all} alt="" width="900px" />
         </div>
@@ -209,7 +211,7 @@ const Main = () => {
 
       {/* e-com */}
       <div className="flex justify-between mt-28 md:flex-wrap sm:flex-wrap">
-        <div className="text-center mx-auto w-1/3 md:flex-wrap sm:flex-wrap">
+        <div className="text-center mx-auto w-1/3 ">
           <h1 className="text-4xl text-blue-800 font-bold mt-24">
             End to end review management in one place{" "}
           </h1>
@@ -224,11 +226,11 @@ const Main = () => {
           </div>
         </div>
         <div className="w-full">
-          <img src={e_com} alt="" width="850px" className="mx-96" />
+          <img src={e_com} alt="" width="850px" />
         </div>
       </div>
       {/* bg gird */}
-      <div className="w-full  ">
+      <div className="w-full md:flex-wrap sm:flex-wrap ">
         <div className=" mt-24 w-full h-auto shadow-sm ">
           <h2 className="text-4xl text-blue-800 font-bold mt-52 text-center">
             Why choose Simplify360 for your business
@@ -299,17 +301,43 @@ const Main = () => {
       </div>
 
       {/* marketplace */}
-      <div className=" mt-16 w-11/12">
+      <div className=" mt-16 w-11/12 md:flex-wrap sm:flex-wrap">
         <div className="">
           <h1 className="text-4xl text-blue-800 font-bold mt-52 text-center">
             Integrate with your favorite tools on the go. Accomplish more by
             doing less
           </h1>
         </div>
-        <div className="mx-44 mt-11">
+        <div className="mx-44 mt-11 flex flex-col items-center">
           <img src={fav} alt="" />
-          <button className="w-56 bg-red-500 text-center text-white text-2xl p-2 ">
-            view Marketpalce
+          <button className="w-72 bg-red-500 flex  justify-around text-center text-white text-2xl p-3 rounded  mb-10">
+            view Marketpalce <FaAngleRight className="mt-2" />
+          </button>
+        </div>
+      </div>
+      <img
+        src={last_before}
+        alt="last_before"
+        className="mb-5"
+        style={{ width: "100%" }}
+      />
+      <div className=" mt-5 w-11/12">
+        <div className="mx-12 px-12">
+          <h1 className="text-4xl text-blue-800 font-bold mt-20 text-center mx-12 px-12">
+            Use Simplify360 for your business. Deliver customer delight on the
+            go.
+          </h1>
+          <div className="m-10 px-10 mt-3">
+            <p className="mx-12 px-12  text-center ">
+              Start using Simplify360 to deliver great customer service.
+              Automate support on every channel and save agent time and boost
+              productivity on the go.
+            </p>
+          </div>
+        </div>
+        <div className="mx-44 mt-11 flex flex-col items-center">
+          <button className="w-40 bg-yellow-500 text-center text-xl p-3 rounded  mb-10">
+            Start for Free
           </button>
         </div>
       </div>
