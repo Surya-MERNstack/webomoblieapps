@@ -26,7 +26,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div className="border border-green-700 overflow-hidden">
+    <div className="overflow-hidden">
       <div className="flex  justify-between ">
         <div className="w-1/3 md:w-1/3 md:mx-24 mt-24 p-3 ">
           <h1 className="font-bold text-3xl md:text-4xl">
